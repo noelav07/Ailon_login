@@ -1,12 +1,9 @@
-FROM python:alpine 
+FROM nginx:1.16.0-alpine
 
-WORKDIR /ailon_login
+ADD . /usr/share/nginx/html
 
-COPY . . 
+EXPOSE 80
 
-RUN pip install --upgrade pip 
-RUN pip install flask 
+CMD ["nginx", "-g", "daemon off;"]
 
-EXPOSE 5000 
 
-ENTRYPOINT ["python3","app.py]
