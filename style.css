@@ -16,7 +16,7 @@ body{
     flex-direction: column;
     height: 100vh;
 }
-/* 
+/* old
 .container{
     background-color: #fff;
     border-radius: 60px;
@@ -31,22 +31,46 @@ body{
 
 .container {
     background-color: #fff;
-    border-radius: 20px; /* Adjusted border-radius for a more modern look */
+    border-radius: 20px; 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
     overflow: hidden;
-    width: 100%; /* Use full width by default */
+    width: 100%; 
 
-    max-width: 768px; /* Set a maximum width for larger screens */
+    max-width: 768px; 
     min-height: 480px;
 }
 
 @media only screen and (min-width: 768px) {
     .container {
-        width: 768px; /* Adjust as needed for your design */
-        max-width: 1024px; /* Set a larger maximum width for larger screens */
+        width: 768px; 
+        max-width: 1024px; 
     }
 }
+
+
+/* good but smaller font */
+/* .container {
+    background-color: #fff;
+    border-radius: 20px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 100%; 
+    max-width: 768px; 
+    min-height: 480px; 
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .container {
+        width: 80%;
+        max-width: 50%; 
+        min-height: 62%;
+    }
+} */
+
+
 
 
 
